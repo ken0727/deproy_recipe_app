@@ -28,7 +28,7 @@ class RegisterController extends Controller
             'password' => Hash::make($request->input('password')),
         ]);
         
-        return redirect('/login')->with('success', '新規会員登録が完了しました。ログインしてください。');
+        return redirect('/')->with('success', '新規会員登録が完了しました。ログインしてください。');
     }
 
     public function uploadImage(Request $request)
